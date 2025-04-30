@@ -1,0 +1,7 @@
+a = int(input("A: "))
+b = int(input("B: "))
+c = int(input("C: "))
+x1 = (-b+((b*b-4*(a*c))**(1/2)))/(2*a)
+x2 = (-b-((b*b-4*(a*c))**(1/2)))/(2*a)
+print("X1: ", x1)
+print("X2: ", x2)
