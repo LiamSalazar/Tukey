@@ -26,6 +26,23 @@ def covarianza(datos_a, datos_b):
 def correlacion(x,y):
     return covarianza(x,y)/(calcularDesviacionEstandar(x)*calcularDesviacionEstandar(y))
 
+def pendiente(x:list,y:list):
+    prom_x = calcularPromedio(x)
+    prom_y = calcularPromedio(y)
+    n = len(x)
+    suma_cuadrados = 0
+    suma_productos = 0
+    for i in x:
+        suma_cuadrados += i**2
+    for i in range(len(x)):
+        suma_productos += x[i]*y[i]
+    m = (suma_productos - n*prom_x*prom_y)/(suma_cuadrados-n*(prom_x)**2)
+    return m
+
+def pendiente_ordenada_origen(x:list, y:list):
+    b = calcularPromedio(y) - pendiente(x,y)*calcularPromedio(x)
+    return b
+
 # Datos de prueba
 horas = [2,4,6,8,10,12,14,16,18,20,
         22,1,25,5,7,9,11,13,15,17]
