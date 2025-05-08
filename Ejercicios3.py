@@ -12,5 +12,17 @@ def sumNums(nums, n):
             r-=1
     return
 
+def aproximacionLeibniz(n):
+    sum = 0
+    for i in range(n):
+        aux = ((-1)**i)/(2*i+1)
+        sum += aux
+    sum *= 4
+    print(sum)
+    return
+
+
 nums = [2,3,7,9,11]
 sumNums(nums, 16)
+print("APROXIMACION PI:")
+aproximacionLeibniz(100000)
