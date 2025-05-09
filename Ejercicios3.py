@@ -46,7 +46,7 @@ def parentesis(cadena):
             else:
                 stack.append(letra)
     return not stack
-
+# diccionario al preguntar in busca llave
 
 #nums = [2,3,7,9,11]
 #sumNums(nums, 16)
