@@ -55,5 +55,5 @@ def parentesis(cadena):
 #print("AREA")
 #nums2 = [15,20,30,10,5]
 #area(nums2)
-p = parentesis("([])")
+p = parentesis("([{)}])")
 print(p)
