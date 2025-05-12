@@ -1,3 +1,5 @@
+import copy
+
 x = 1
 y = 2
 print("VALORES SIN INTERCAMBIAR:")
@@ -57,3 +59,4 @@ def eliminaElementos(lista, elimina):
 lista = eliminaElementos(lista, elimina)
 print("ELIMINADOS")
 print(lista)
+lita2 = copy.deepcopy(lista)
