@@ -60,3 +60,8 @@ lista = eliminaElementos(lista, elimina)
 print("ELIMINADOS")
 print(lista)
 lita2 = copy.deepcopy(lista)
+
+#List comprehension
+comp = [i for i in range(10) if (i % 2) == 0]
+print("COMP")
+print(comp)
